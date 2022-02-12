@@ -1,0 +1,23 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title WEB 2
+    body 
+        table
+            tr
+                th firstName
+                th LastName
+                th document
+                th address
+                th phone
+                th email
+            each user in rows
+                tr
+                    th #{user.firstName}
+                    th #{user.LastName}
+                    th #{user.document}
+                    th #{user.address}
+                    th #{user.phone}
+                    th #{user.email}
